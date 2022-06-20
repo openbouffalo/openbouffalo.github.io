@@ -8,3 +8,9 @@ nav:
     - 'BL70X Series':
       - 'General Information': 'chips/bl70x/info.md'
       - eFuse: 'chips/bl70x/efuse.md'
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
