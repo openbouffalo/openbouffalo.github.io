@@ -9,7 +9,13 @@ In case of BL70X eFuse, once you burn the bit in eFuse, it's not possible to rev
 
 The structure of the eFuse is available in [Bouffalo's SDK](https://github.com/bouffalolab/bl_mcu_sdk/blob/master/drivers/bl702_driver/regs/ef_data_0_reg.h) and bfl_mcu_tools (file `efuse_cfg_keys.py`), although, it doesn't contains *all* properties.
 
-At the moment, if you use firmware encryption or firmware verification feature, there is *no* free space for app-used eFuses.
+## Free eFuse slots for user application
+
+*NOTE: This still work in progress and those information still can be not true*
+
+The slots `ef_key_slot_4_w0` and `ef_key_slot_4_w1` **seems** not to be used by any code.  
+If encryption is not used, slots from `ef_key_slot_0_w0` to `ef_key_slot_3_w3` can be free for the user application.
+
 
 ## Table of eFuse structure
 
