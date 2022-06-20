@@ -427,7 +427,7 @@
 Size: 1Kbit</p>
 </blockquote>
 <p>eFuse is one time programmable memory. It's mostly used to store things like MAC Address, encryption keys and all other stuff, which are not possible to change after it being burned into eFuse.</p>
-<p>In case of eFuse core inside BL70X chips, it's <em>currently</em> unknown how exactly it works (TBD). eFuse contents can be read or writen, until it is not locked by burning read/write bit in eFuse lock area.</p>
+<p>In case of BL70X eFuse, once you burn the bit in eFuse, it's not possible to revert it. You can also write/read lock of specific eFuse slots/areas.</p>
 <p>The structure of the eFuse is available in <a href="https://github.com/bouffalolab/bl_mcu_sdk/blob/master/drivers/bl702_driver/regs/ef_data_0_reg.h">Bouffalo's SDK</a> and bfl_mcu_tools (file <code>efuse_cfg_keys.py</code>), although, it doesn't contains <em>all</em> properties.</p>
 <p>At the moment, if you use firmware encryption or firmware verification feature, there is <em>no</em> free space for app-used eFuses.</p>
 <h2 id="table-of-efuse-structure">Table of eFuse structure</h2>
