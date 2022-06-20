@@ -346,6 +346,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#free-efuse-slots-for-user-application" class="md-nav__link">
+    Free eFuse slots for user application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#table-of-efuse-structure" class="md-nav__link">
     Table of eFuse structure
   </a>
@@ -401,6 +408,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#free-efuse-slots-for-user-application" class="md-nav__link">
+    Free eFuse slots for user application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#table-of-efuse-structure" class="md-nav__link">
     Table of eFuse structure
   </a>
@@ -429,7 +443,10 @@ Size: 1Kbit</p>
 <p>eFuse is one time programmable memory. It's mostly used to store things like MAC Address, encryption keys and all other stuff, which are not possible to change after it being burned into eFuse.</p>
 <p>In case of BL70X eFuse, once you burn the bit in eFuse, it's not possible to revert it. You can also write/read lock of specific eFuse slots/areas.</p>
 <p>The structure of the eFuse is available in <a href="https://github.com/bouffalolab/bl_mcu_sdk/blob/master/drivers/bl702_driver/regs/ef_data_0_reg.h">Bouffalo's SDK</a> and bfl_mcu_tools (file <code>efuse_cfg_keys.py</code>), although, it doesn't contains <em>all</em> properties.</p>
-<p>At the moment, if you use firmware encryption or firmware verification feature, there is <em>no</em> free space for app-used eFuses.</p>
+<h2 id="free-efuse-slots-for-user-application">Free eFuse slots for user application</h2>
+<p><em>NOTE: This still work in progress and those information still can be not true</em></p>
+<p>The slots <code>ef_key_slot_4_w0</code> and <code>ef_key_slot_4_w1</code> <strong>seems</strong> not to be used by any code.<br />
+If encryption is not used, slots from <code>ef_key_slot_0_w0</code> to <code>ef_key_slot_3_w3</code> can be free for the user application.</p>
 <h2 id="table-of-efuse-structure">Table of eFuse structure</h2>
 <table>
 <thead>
