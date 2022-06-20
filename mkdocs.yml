@@ -1,0 +1,10 @@
+site_name: OpenBouffalo Wiki
+theme: material
+nav:
+  - Home: index.md
+  - Common:
+    - 'Boot Header': 'common/boot-header.md'
+  - Chips:
+    - 'BL70X Series':
+      - 'General Information': 'chips/bl70x/info.md'
+      - eFuse: 'chips/bl70x/efuse.md'
