@@ -1,0 +1,24 @@
+[[bl60x]]
+id = "BL602"
+gpios = 16
+package = "QFN32"
+
+[[bl60x]]
+id = "BL604"
+gpios = 23
+package = "QFN40"
+
+[[bl70x]]
+id = "BL702"
+gpios = 15
+package = "QFN30"
+
+[[bl70x]]
+id = "BL704"
+gpios = 23
+package = "QFN40"
+
+[[bl70x]]
+id = "BL706"
+gpios = 31
+package = "QFN48"
