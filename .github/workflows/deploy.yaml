@@ -18,7 +18,7 @@ jobs:
         extended: true
         hugo-version: '0.108.0'
     - name: Build static site
-      run: hugo --minify --enableGitInfo
+      run: hugo --minify --enableGitInfo --baseURL "https://openbouffalo.github.io"
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
