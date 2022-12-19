@@ -1,0 +1,31 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v3
+    - name: Set up Hugo
+      uses: peaceiris/actions-hugo@16361eb4acea8698b220b76c0d4e84e1fd22c61d # v2.6.0
+      with:
+        extended: true
+        hugo-version: '0.108.0'
+    - name: Build static site
+      run: hugo --minify --enableGitInfo
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: build
+        path: public/
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@de7ea6f8efb354206b205ef54722213d99067935 # v3.9.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: public/
