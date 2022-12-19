@@ -1,4 +1,4 @@
-baseURL = "http://localhost"
+baseURL = "https://openbouffalo.github.io"
 title = "open-bouffalo"
 theme = "hugo-geekdoc"
 
@@ -8,6 +8,7 @@ pluralizeListTitles = false
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 disablePathToLower = true
+enableGitInfo = true
 
 # Required if you want to render robots.txt template
 enableRobotsTXT = true
@@ -24,3 +25,7 @@ enableRobotsTXT = true
 [taxonomies]
    tag = "tags"
 
+[params]
+# Enable 'Edit page' links
+geekdocRepo = 'https://github.com/openbouffalo/openbouffalo.github.io'
+geekdocEditPath = "edit/master"
