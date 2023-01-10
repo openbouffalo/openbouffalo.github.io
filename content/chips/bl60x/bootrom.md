@@ -11,13 +11,14 @@ title = "BootROM"
 
 ## Boot Info header structure
 
-Size: `18 Bytes`
+Size: `20 Bytes`
 
 - `Byte 0 - 3` - BootROM version
 - `Byte 4` - Sign configuration
 - `Byte 5` - Encrypt configuration
 - `Byte 6 - 11` - Unknown
-- `Byte 12 - 17` - ChipID (MAC reversed?)
+- `Byte 12 - 17` - ChipID (MAC?)
+- `Byte 18 - 19` - Unknown
 
 
 ## Dumps
