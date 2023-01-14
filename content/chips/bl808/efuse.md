@@ -49,7 +49,7 @@ sw_usage_1 == 0x18fbf42f
 | hbn_jump_disable     | 31         | 1           | 0             |                                                                                                                                                                                                                    |
 
 Notes:
- - Boot ROM debug output is enabled if and only if `uart_log_disable == 1 && uart_log_reopen == 0`. Since `uart_log_disable` is set on all available devboards, burning `uart_log_reopen` enables boot ROM debugging on the UART selected by `bootlog_pin_cfg`.
+ - Boot ROM debug output is disabled if and only if `uart_log_disable == 1 && uart_log_reopen == 0`. Since `uart_log_disable` is set on all available devboards, burning `uart_log_reopen` enables boot ROM debugging on the UART selected by `bootlog_pin_cfg`.
  - Even if `mediaboot_disable` is set, media boot will _still_ be attempted if both the UART and USB bootloader protocols are disabled (i.e. `usbboot_enable == 0 && uartboot_disable == 1`)
 
 ### sw_usage_1
