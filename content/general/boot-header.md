@@ -2,6 +2,10 @@
 title = "Boot Header"
 +++
 
+{{< hint type=important >}}
+This page is mostly obsolete, and should be replaced soon.
+{{< /hint >}}
+
 ## Kaitai Script
 
 ```yaml
