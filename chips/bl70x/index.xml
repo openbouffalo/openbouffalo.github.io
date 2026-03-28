@@ -1,8 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BL70X on open-bouffalo</title><link>https://openbouffalo.github.io/chips/bl70x/</link><description>Recent content in BL70X on open-bouffalo</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://openbouffalo.github.io/chips/bl70x/index.xml" rel="self" type="application/rss+xml"/><item><title>BootROM</title><link>https://openbouffalo.github.io/chips/bl70x/bootrom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://openbouffalo.github.io/chips/bl70x/bootrom/</guid><description>General information Location: 0x21000000 - 0x21020000 Size: 128 KiB Can boot from: USB, UART, SPI Flash BootROM mode trigger: IO28 pulled HIGH Boot Info header structure Size: 24 Bytes
-Byte 0 - 3 - BootROM version Byte 4 - Sign configuration Byte 5 - Encrypt configuration Byte 6 - 15 - Unknown Byte 16 - 23 - ChipID (Something related to MAC) Dumps File Chip Version Build Date Dumped by bl706-bootrom.</description></item><item><title>eFuse</title><link>https://openbouffalo.github.io/chips/bl70x/efuse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://openbouffalo.github.io/chips/bl70x/efuse/</guid><description>Applies to BL702, BL704 and BL706
-Size: 1Kbit
-eFuse is one time programmable memory. It&amp;rsquo;s mostly used to store things like MAC Address, encryption keys and all other stuff, which are not possible to change after it being burned into eFuse.
-In case of BL70X eFuse, once you burn the bit in eFuse, it&amp;rsquo;s not possible to revert it. You can also write/read lock of specific eFuse slots/areas.
-The structure of the eFuse is available in Bouffalo&amp;rsquo;s SDK and bfl_mcu_tools (file efuse_cfg_keys.</description></item><item><title>Errata</title><link>https://openbouffalo.github.io/chips/bl70x/errata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://openbouffalo.github.io/chips/bl70x/errata/</guid><description>Applies to BL702, BL704 and BL706
-Issues with running image loaded by BootROM For some reason, BOOTROM_RUN_IMAGE (0x1A) command in BootROM, doesn&amp;rsquo;t work properly, and because of it, eflash_loader have issues with initializing USB (so sometimes in Windows, the UART driver freeze, so it can&amp;rsquo;t communicate with eflash_loader). (NOTE: This is observation, other issues are not known yet)
-To workaround this, there are three registers set, via BOOTROM_WRITE_MEM (0x50) command in BootROM:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BL70X on open-bouffalo</title><link>https://openbouffalo.github.io/chips/bl70x/</link><description>Recent content in BL70X on open-bouffalo</description><generator>Hugo</generator><language>en</language><atom:link href="https://openbouffalo.github.io/chips/bl70x/index.xml" rel="self" type="application/rss+xml"/><item><title>BootROM</title><link>https://openbouffalo.github.io/chips/bl70x/bootrom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://openbouffalo.github.io/chips/bl70x/bootrom/</guid><description>&lt;div class="flex align-center gdoc-page__anchorwrap"&gt;
+ &lt;h2 id="general-information"
+ &gt;
+ General information
+ &lt;/h2&gt;
+ &lt;a data-clipboard-text="https://openbouffalo.github.io/chips/bl70x/bootrom/#general-information" class="gdoc-page__anchor clip flex align-center" title="Anchor to: General information" aria-label="Anchor to: General information" href="#general-information"&gt;
+ &lt;svg class="gdoc-icon gdoc_link"&gt;&lt;use xlink:href="#gdoc_link"&gt;&lt;/use&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Location: &lt;code&gt;0x21000000 - 0x21020000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Size: &lt;code&gt;128 KiB&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Can boot from: USB, UART, SPI Flash&lt;/li&gt;
+&lt;li&gt;BootROM mode trigger: IO28 pulled HIGH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="flex align-center gdoc-page__anchorwrap"&gt;
+ &lt;h2 id="boot-info-header-structure"
+ &gt;
+ Boot Info header structure
+ &lt;/h2&gt;
+ &lt;a data-clipboard-text="https://openbouffalo.github.io/chips/bl70x/bootrom/#boot-info-header-structure" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Boot Info header structure" aria-label="Anchor to: Boot Info header structure" href="#boot-info-header-structure"&gt;
+ &lt;svg class="gdoc-icon gdoc_link"&gt;&lt;use xlink:href="#gdoc_link"&gt;&lt;/use&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Size: &lt;code&gt;24 Bytes&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Byte 0 - 3&lt;/code&gt; - BootROM version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Byte 4&lt;/code&gt; - Sign configuration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Byte 5&lt;/code&gt; - Encrypt configuration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Byte 6 - 15&lt;/code&gt; - Unknown&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Byte 16 - 23&lt;/code&gt; - ChipID (Something related to MAC)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="flex align-center gdoc-page__anchorwrap"&gt;
+ &lt;h2 id="dumps"
+ &gt;
+ Dumps
+ &lt;/h2&gt;
+ &lt;a data-clipboard-text="https://openbouffalo.github.io/chips/bl70x/bootrom/#dumps" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Dumps" aria-label="Anchor to: Dumps" href="#dumps"&gt;
+ &lt;svg class="gdoc-icon gdoc_link"&gt;&lt;use xlink:href="#gdoc_link"&gt;&lt;/use&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/div&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;File&lt;/th&gt;
+ &lt;th&gt;Chip&lt;/th&gt;
+ &lt;th&gt;Version&lt;/th&gt;
+ &lt;th&gt;Build Date&lt;/th&gt;
+ &lt;th&gt;Dumped by&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;a
+ class="gdoc-markdown__link"
+ href="https://openbouffalo.github.io/binaries/bl70x/bl706-bootrom.bin"
+&gt;bl706-bootrom.bin&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;BL706?&lt;/td&gt;
+ &lt;td&gt;TODO&lt;/td&gt;
+ &lt;td&gt;May 14 2020&lt;/td&gt;
+ &lt;td&gt;gamiee&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;</description></item><item><title>eFuse</title><link>https://openbouffalo.github.io/chips/bl70x/efuse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://openbouffalo.github.io/chips/bl70x/efuse/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Applies to BL702, BL704 and BL706&lt;br&gt;
+Size: 1Kbit&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;eFuse is one time programmable memory. It&amp;rsquo;s mostly used to store things like MAC Address, encryption keys and all other stuff, which are not possible to change after it being burned into eFuse.&lt;/p&gt;
+&lt;p&gt;In case of BL70X eFuse, once you burn the bit in eFuse, it&amp;rsquo;s not possible to revert it. You can also write/read lock of specific eFuse slots/areas.&lt;/p&gt;
+&lt;p&gt;The structure of the eFuse is available in &lt;a
+ class="gdoc-markdown__link"
+ href="https://github.com/bouffalolab/bl_mcu_sdk/blob/master/drivers/bl702_driver/regs/ef_data_0_reg.h"
+&gt;Bouffalo&amp;rsquo;s SDK&lt;/a&gt; and bfl_mcu_tools (file &lt;code&gt;efuse_cfg_keys.py&lt;/code&gt;), although, it doesn&amp;rsquo;t contains &lt;em&gt;all&lt;/em&gt; properties.&lt;/p&gt;</description></item><item><title>Errata</title><link>https://openbouffalo.github.io/chips/bl70x/errata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://openbouffalo.github.io/chips/bl70x/errata/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Applies to BL702, BL704 and BL706&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="flex align-center gdoc-page__anchorwrap"&gt;
+ &lt;h2 id="issues-with-running-image-loaded-by-bootrom"
+ &gt;
+ Issues with running image loaded by BootROM
+ &lt;/h2&gt;
+ &lt;a data-clipboard-text="https://openbouffalo.github.io/chips/bl70x/errata/#issues-with-running-image-loaded-by-bootrom" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Issues with running image loaded by BootROM" aria-label="Anchor to: Issues with running image loaded by BootROM" href="#issues-with-running-image-loaded-by-bootrom"&gt;
+ &lt;svg class="gdoc-icon gdoc_link"&gt;&lt;use xlink:href="#gdoc_link"&gt;&lt;/use&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;For some reason, &lt;code&gt;BOOTROM_RUN_IMAGE&lt;/code&gt; (&lt;code&gt;0x1A&lt;/code&gt;) command in BootROM, doesn&amp;rsquo;t work properly, and because of it,
+eflash_loader have issues with initializing USB (so sometimes in Windows, the UART driver freeze, so it can&amp;rsquo;t communicate with eflash_loader).
+(NOTE: This is observation, other issues are not known yet)&lt;/p&gt;</description></item></channel></rss>
