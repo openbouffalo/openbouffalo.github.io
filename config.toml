@@ -1,5 +1,5 @@
-baseURL = "https://openbouffalo.github.io"
-title = "open-bouffalo"
+baseURL = "https://openbouffalo.org"
+title = "Open Bouffalo"
 theme = "hugo-geekdoc"
 
 pluralizeListTitles = false
