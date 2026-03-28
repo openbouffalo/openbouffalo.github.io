@@ -26,6 +26,7 @@ enableRobotsTXT = true
    tag = "tags"
 
 [params]
-# Enable 'Edit page' links
-geekdocRepo = 'https://github.com/openbouffalo/openbouffalo.github.io'
-geekdocEditPath = "edit/master"
+  # Enable 'Edit page' links
+  geekdocRepo = 'https://github.com/openbouffalo/openbouffalo.github.io'
+  geekdocEditPath = "edit/master"
+  geekdocLogo = "img/logo.png"
