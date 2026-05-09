@@ -732,4 +732,68 @@ Press the &lt;code&gt;BOOT&lt;/code&gt; button while resetting or applying power
 &lt;p&gt;Flashing does not work with DevCube &lt;code&gt;v1.8.4&lt;/code&gt;, so use &lt;code&gt;v1.8.3&lt;/code&gt; or another known-good version. See &lt;a
  class="gdoc-markdown__link"
  href="https://github.com/openbouffalo/buildroot_bouffalo/issues/60"
-&gt;openbouffalo/buildroot_bouffalo#60&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+&gt;openbouffalo/buildroot_bouffalo#60&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>JTAG Pins</title><link>https://openbouffalo.github.io/general/JTAG_pins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://openbouffalo.github.io/general/JTAG_pins/</guid><description>&lt;div class="flex align-center gdoc-page__anchorwrap"&gt;
+ &lt;h2 id="default-jtag-pins"
+ &gt;
+ Default JTAG Pins
+ &lt;/h2&gt;
+ &lt;a data-clipboard-text="https://openbouffalo.github.io/general/JTAG_pins/#default-jtag-pins" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Default JTAG Pins" aria-label="Anchor to: Default JTAG Pins" href="#default-jtag-pins"&gt;
+ &lt;svg class="gdoc-icon gdoc_link"&gt;&lt;use xlink:href="#gdoc_link"&gt;&lt;/use&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/div&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;JTAG Pin&lt;/th&gt;
+ &lt;th&gt;BL60x&lt;/th&gt;
+ &lt;th&gt;BL70x&lt;/th&gt;
+ &lt;th&gt;BL70xL&lt;/th&gt;
+ &lt;th&gt;BL61x&lt;/th&gt;
+ &lt;th&gt;BL808&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;TMS&lt;/td&gt;
+ &lt;td&gt;12&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;TCK&lt;/td&gt;
+ &lt;td&gt;14&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;12&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;TDO&lt;/td&gt;
+ &lt;td&gt;11&lt;/td&gt;
+ &lt;td&gt;9&lt;/td&gt;
+ &lt;td&gt;7&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;7&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;TDI&lt;/td&gt;
+ &lt;td&gt;17&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;13&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="flex align-center gdoc-page__anchorwrap"&gt;
+ &lt;h2 id="changing-jtag-pins"
+ &gt;
+ Changing JTAG pins
+ &lt;/h2&gt;
+ &lt;a data-clipboard-text="https://openbouffalo.github.io/general/JTAG_pins/#changing-jtag-pins" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Changing JTAG pins" aria-label="Anchor to: Changing JTAG pins" href="#changing-jtag-pins"&gt;
+ &lt;svg class="gdoc-icon gdoc_link"&gt;&lt;use xlink:href="#gdoc_link"&gt;&lt;/use&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;JTAG pins can be switched in 2 ways:&lt;/p&gt;</description></item></channel></rss>
