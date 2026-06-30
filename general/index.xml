@@ -354,6 +354,7 @@
  &lt;th&gt;BL70xL&lt;/th&gt;
  &lt;th&gt;BL61x&lt;/th&gt;
  &lt;th&gt;BL808&lt;/th&gt;
+ &lt;th&gt;BL616CL&lt;/th&gt;
  &lt;/tr&gt;
  &lt;/thead&gt;
  &lt;tbody&gt;
@@ -364,6 +365,7 @@
  &lt;td&gt;0&lt;/td&gt;
  &lt;td&gt;0&lt;/td&gt;
  &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;20&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;TCK&lt;/td&gt;
@@ -372,6 +374,7 @@
  &lt;td&gt;2&lt;/td&gt;
  &lt;td&gt;1&lt;/td&gt;
  &lt;td&gt;12&lt;/td&gt;
+ &lt;td&gt;21&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;TDO&lt;/td&gt;
@@ -380,6 +383,7 @@
  &lt;td&gt;7&lt;/td&gt;
  &lt;td&gt;2&lt;/td&gt;
  &lt;td&gt;7&lt;/td&gt;
+ &lt;td&gt;22&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;TDI&lt;/td&gt;
@@ -388,6 +392,7 @@
  &lt;td&gt;1&lt;/td&gt;
  &lt;td&gt;3&lt;/td&gt;
  &lt;td&gt;13&lt;/td&gt;
+ &lt;td&gt;23&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
